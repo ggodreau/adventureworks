@@ -46,4 +46,4 @@ You should see something like the following while it processes:
 
 When completed, the import should look as follows:
 
-	![completed import](./assets/finished.png)
+![completed import](./assets/finished.png)
