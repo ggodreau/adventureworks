@@ -23,9 +23,11 @@ Create the database:
 	postgres=> CREATE DATABASE adventureworks;
 
 Log out:
+
 	postgres=>\q
 
 Run the script from your local machine:
+
 	$ psql -h myserver.mydomain.com -U myusername -d adventureworks -f install.sql
 
 You should see something like the following while it processes:
