@@ -10,40 +10,40 @@ Clone this repo in its entirety to your local machine. You will need [psql](http
 
 Once you have confirmed your postgres install, log into the server:
 
-```$ psql -h myserver.mydomain.com -U myusername -d postgres
-Password for user myusername: 
-psql.bin (10.3, server 10.1)
-SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
-
-Type "help" for help.
-Cannot read termcap database;
-using dumb terminal settings.```
+	$ psql -h myserver.mydomain.com -U myusername -d postgres
+	Password for user myusername: 
+	psql.bin (10.3, server 10.1)
+	SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+	
+	Type "help" for help.
+	Cannot read termcap database;
+	using dumb terminal settings.
 
 Create the database:
-```postgres=> CREATE DATABASE adventureworks;```
+	postgres=> CREATE DATABASE adventureworks;
 
 Log out:
-```postgres=>\q```
+	postgres=>\q
 
 Run the script from your local machine:
-```$ psql -h myserver.mydomain.com -U myusername -d adventureworks -f install.sql``` 
+	$ psql -h myserver.mydomain.com -U myusername -d adventureworks -f install.sql
 
 You should see something like the following while it processes:
 
-```COPY 19972
-Copying data into Person.CountryRegion
-
-COPY 238
-CREATE SCHEMA
-COMMENT
- Copying data into HumanResources.Department
-
-COPY 16
- Copying data into HumanResources.Employee
-
-COPY 290
-Copying data into HumanResources.EmployeeDepartmentHistory```
+	COPY 19972
+	Copying data into Person.CountryRegion
+	
+	COPY 238
+	CREATE SCHEMA
+	COMMENT
+	 Copying data into HumanResources.Department
+	
+	COPY 16
+	 Copying data into HumanResources.Employee
+	
+	COPY 290
+	Copying data into HumanResources.EmployeeDepartmentHistory
 
 When completed, the import should look as follows:
 
-![completed import](./assets/finished.png)
+	![completed import](./assets/finished.png)
