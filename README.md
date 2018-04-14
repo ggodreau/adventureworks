@@ -20,6 +20,7 @@ Once you have confirmed your postgres install, log into the server:
 	using dumb terminal settings.
 
 Create the database:
+
 	postgres=> CREATE DATABASE adventureworks;
 
 Log out:
