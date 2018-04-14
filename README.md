@@ -4,7 +4,7 @@ This is based off the work done by [lorint](https://github.com/lorint/AdventureW
 
 ## Getting started
 
-Clone this repo in its entirety to your local machine. You will need [psql](https://www.postgresql.org/download/) installed on the machine which receives the files. The instructions below will send the csvs through the network to the target DB. This is NOT written to commit the files to a local DB.
+Clone this repo in its entirety to your local machine. You will need [psql](https://www.postgresql.org/download/) installed on the machine on which you run this script. The instructions below will send the csvs through the network to the target DB. This is NOT written to commit the files to a local DB.
 
 ### Run the script
 
