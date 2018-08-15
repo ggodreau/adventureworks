@@ -4,6 +4,8 @@ This is based off the work done by [lorint](https://github.com/lorint/AdventureW
 
 This is the *non-DW* version of the database, meaning it has been normalized (Production.Product (normalized) vs Product (non-normalized)). It is the online, live, transactional version of the DB, which hasn't been DW (data warehoused) to be more coherent for analytic purposes. This is intentional to give the student more experience dealing with complex joins to get information.
 
+The [raw csv files](./data) are contained in this repo should you want to port to a different database entirely.
+
 ## Getting started
 
 Clone this repo in its entirety to your local machine. You will need [psql](https://www.postgresql.org/download/) installed on the machine on which you run this script. The instructions below will send the csvs through the network to the target DB. This is NOT written to commit the files to a local DB.
