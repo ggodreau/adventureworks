@@ -4,7 +4,8 @@ This is based off the work done by [lorint](https://github.com/lorint/AdventureW
 
 This is the *non-DW* version of the database, meaning it has been normalized (Production.Product (normalized) vs Product (non-normalized)). It is the online, live, transactional version of the DB, which hasn't been DW (data warehoused) to be more coherent for analytic purposes. This is intentional to give the student more experience dealing with complex joins to get information.
 
-The [raw csv files](./data) are contained in this repo should you want to port to a different database entirely.
+The [raw csv files](./data) are contained in this repo should you want to port to a different database entirely. They **do not** contain column headers.
+The [raw tsv files](./tsvs) are contained in this repo should you want to port to a different database entirely. They do not include all tables (WIP), however **do** contain column headers. This is useful for programs with flat file import (python, Qlik, Tableau, etc.).
 
 ## Getting started
 
