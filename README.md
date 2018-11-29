@@ -54,10 +54,10 @@ Log out:
 Be sure this is installed _prior_ to running the step below (`-f install.sql`). To ensure it is installed you can perform the following:
 
   - Ubuntu:
-	sudo apt-get install postgresql-contrib-9.4
+	`sudo apt-get install postgresql-contrib-9.4`
 
   - RHEL:
-	yum install -y postgresql94-contrib
+	`yum install -y postgresql94-contrib`
 
 Run the script from your local machine:
 
