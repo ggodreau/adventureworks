@@ -34,36 +34,30 @@ Log out:
 
 *Important Note!* It appears there is a dependency on `postgresql-contrib-9.4` (or 9.5, etc, depending on version). If it is not run, the following failure will be experienced:
 
-	```
 	$ psql -d adventureworks -f install.sql 
-Tuples only is on.
-psql:install.sql:53: ERROR:  could not open extension control file "/usr/share/pgsql94/extension/uuid-ossp.control": No such file or directory
-psql:install.sql:56: ERROR:  could not open extension control file "/usr/share/pgsql94/extension/tablefunc.control": No such file or directory
-CREATE DOMAIN
-CREATE DOMAIN
-CREATE DOMAIN
-CREATE DOMAIN
-CREATE DOMAIN
-CREATE DOMAIN
-psql:install.sql:173: ERROR:  function uuid_generate_v1() does not exist
-HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
-psql:install.sql:175: ERROR:  schema "person" does not exist
- Copying data into Person.BusinessEntity
-psql:install.sql:178: ERROR:  schema "person" does not exist
- Copying data into Person.Person
-	```
+	Tuples only is on.
+	psql:install.sql:53: ERROR:  could not open extension control file "/usr/share/pgsql94/extension/uuid-ossp.control": No such file or directory
+	psql:install.sql:56: ERROR:  could not open extension control file "/usr/share/pgsql94/extension/tablefunc.control": No such file or directory
+	CREATE DOMAIN
+	CREATE DOMAIN
+	CREATE DOMAIN
+	CREATE DOMAIN
+	CREATE DOMAIN
+	CREATE DOMAIN
+	psql:install.sql:173: ERROR:  function uuid_generate_v1() does not exist
+	HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+	psql:install.sql:175: ERROR:  schema "person" does not exist
+	 Copying data into Person.BusinessEntity
+	psql:install.sql:178: ERROR:  schema "person" does not exist
+	 Copying data into Person.Person
 
 Be sure this is installed _prior_ to running the step below (`-f install.sql`). To ensure it is installed you can perform the following:
 
-- Ubuntu:
-	```
+  - Ubuntu:
 	sudo apt-get install postgresql-contrib-9.4
-	```
 
-- RHEL:
-	```
+  - RHEL:
 	yum install -y postgresql94-contrib
-	``` 
 
 Run the script from your local machine:
 
